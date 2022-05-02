@@ -1,0 +1,182 @@
+body{
+    background-image: url("Img_fondo.png");
+    background-position: bottom;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.pares{
+    float: left;
+}
+/*Estilos para botones de tapas*/
+button.tap{
+    background-image: url("Img_atras.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    left: 350px;
+    top: 100px;
+    float: left;
+    background-color: transparent;
+}
+
+button.tap2{
+    background-image: url("Img_atras.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    left: 370px;
+    top: 100px;
+    float: left;
+    background-color: transparent;
+}
+
+button.tap3{
+    background-image: url("Img_atras.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    left: 390px;
+    top: 100px;
+    float: left;
+    background-color: transparent;
+}
+
+button.tap4{
+    background-image: url("Img_atras.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    left: 410px;
+    top: 100px;
+    float: left;
+    background-color: transparent;
+}
+
+button.tap5{
+    background-image: url("Img_atras.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    left: 430px;
+    top: 100px;
+    float: left;
+    background-color: transparent;
+}
+
+/*Estilos para botones de caras*/
+button.car{
+    background-image: url("Img_carta\ blanca.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    bottom: 151px;
+    left: 350px;
+    float: left;
+    background-color: transparent;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: blue;*/
+}
+
+button.car2{
+    background-image: url("Img_carta\ blanca.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    bottom: 151px;
+    left: 370px;
+    float: left;
+    background-color: transparent;
+}
+
+button.car3{
+    background-image: url("Img_carta\ blanca.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    bottom: 151px;
+    left: 390px;
+    float: left;
+    background-color: transparent;
+}
+
+button.car4{
+    background-image: url("Img_carta\ blanca.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    bottom: 151px;
+    left: 410px;
+    float: left;
+    background-color: transparent;
+}
+
+button.car5{
+    background-image: url("Img_carta\ blanca.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    bottom: 151px;
+    left: 430px;
+    float: left;
+    background-color: transparent;
+}
+
+/*Display para cada par*/
+#img{
+    display: none;
+
+}
+
+#img2{
+    display: none;
+}
+
+#img3{
+    display: none;
+}
+
+#img4{
+    display: none;
+}
+
+#img5{
+    display: none;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
