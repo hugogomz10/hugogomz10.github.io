@@ -6,50 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>Juego</title>
+    <title>Juego CITE</title>
 </head>
 
 <body>
-    <!--Primer par de cartas-->
+    <!--Primera carta-->
     <div class="pares">
-        <button type="button" class="tap" id="btntap" onclick="mostrar();"></button>
-        <div id="img">
-            <button type="button" class="car" id="btncar" onclick="ocultar();">Texto1</button>
+        <button type="button" class="tap" id="btntap"></button>
+    </div>
+
+    <!--Segunda carta-->
+    <div class="pares">
+        <button type="button" class="tap2" id="btntap2"></button>
+    </div>
+
+    <!--Tercera carta-->
+    <div class="pares">
+        <button type="button" class="tap3" id="btntap3"></button>
+    </div>
+
+    <!--Cuarta carta-->
+    <div class="pares">
+        <button type="button" class="tap4" id="btntap4"></button>
+    </div>
+
+    <!--Quinta carta-->
+    <div class="pares">
+        <button type="button" class="tap5" id="btntap5"></button>
+    </div>
+
+    <!--Limpiar elementos flotados-->
+    <div class="clearfix"></div>
+
+    <!--Ventanas emergentes-->
+
+    <!--Ventana emergente 1-->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btncerrar" class="btncerrar">x</a>
+            <img src=".//Img_carta blanca.png" alt="carta1">
         </div>
     </div>
 
-    <!--Segundo par de cartas-->
-    <div class="pares">
-        <button type="button" class="tap2" id="btntap" onclick="mostrar2();"></button>
-        <div id="img2">
-            <button type="button" class="car2" id="btncar" onclick="ocultar2();">Texto2</button>
+    <!--Ventana emergente 2-->
+    <div class="overlay2" id="overlay2">
+        <div class="popup2" id="popup2">
+            <a href="#" id="btncerrar2" class="btncerrar2">x</a>
+            <img src=".//Img_carta blanca.png" alt="carta2">
         </div>
     </div>
 
-    <!--Tercer par de cartas-->
-    <div class="pares">
-        <button type="button" class="tap3" id="btntap" onclick="mostrar3();"></button>
-        <div id="img3">
-            <button type="button" class="car3" id="btncar" onclick="ocultar3();">Texto3</button>
+    <!--Ventana emergente 3-->
+    <div class="overlay3" id="overlay3">
+        <div class="popup3" id="popup3">
+            <a href="#" id="btncerrar3" class="btncerrar3">x</a>
+            <img src=".//Img_carta blanca.png" alt="carta2">
         </div>
     </div>
 
-    <!--Cuarto par de cartas-->
-    <div class="pares">
-        <button type="button" class="tap4" id="btntap" onclick="mostrar4();"></button>
-        <div id="img4">
-            <button type="button" class="car4" id="btncar" onclick="ocultar4();">Texto4</button>
+    <!--Ventana emergente 4-->
+    <div class="overlay4" id="overlay4">
+        <div class="popup4" id="popup4">
+            <a href="#" id="btncerrar4" class="btncerrar4">x</a>
+            <img src=".//Img_carta blanca.png" alt="carta4">
         </div>
     </div>
 
-    <!--Quinto par de cartas-->
-    <div class="pares">
-        <button type="button" class="tap5" id="btntap" onclick="mostrar5();"></button>
-        <div id="img5">
-            <button type="button" class="car5" id="btncar" onclick="ocultar5();">Texto5</button>
+    <!--Ventana emergente 5-->
+    <div class="overlay5" id="overlay5">
+        <div class="popup5" id="popup5">
+            <a href="#" id="btncerrar5" class="btncerrar5">x</a>
+            <img src=".//Img_carta blanca.png" alt="carta5">
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

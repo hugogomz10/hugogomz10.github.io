@@ -9,6 +9,7 @@ body{
     float: left;
 }
 /*Estilos para botones de tapas*/
+/*Primer boton*/
 button.tap{
     background-image: url("Img_atras.png");
     background-position: center;
@@ -23,6 +24,11 @@ button.tap{
     background-color: transparent;
 }
 
+button.tap.active{
+    visibility: hidden;
+}
+
+/*Segundo boton*/
 button.tap2{
     background-image: url("Img_atras.png");
     background-position: center;
@@ -37,6 +43,11 @@ button.tap2{
     background-color: transparent;
 }
 
+button.tap2.active{
+    visibility: hidden;
+}
+
+/*Tercer boton*/
 button.tap3{
     background-image: url("Img_atras.png");
     background-position: center;
@@ -51,6 +62,11 @@ button.tap3{
     background-color: transparent;
 }
 
+button.tap3.active{
+    visibility: hidden;
+}
+
+/*Cuarto boton*/
 button.tap4{
     background-image: url("Img_atras.png");
     background-position: center;
@@ -65,6 +81,11 @@ button.tap4{
     background-color: transparent;
 }
 
+button.tap4.active{
+    visibility: hidden;
+}
+
+/*Quinto boton*/
 button.tap5{
     background-image: url("Img_atras.png");
     background-position: center;
@@ -79,104 +100,229 @@ button.tap5{
     background-color: transparent;
 }
 
-/*Estilos para botones de caras*/
-button.car{
-    background-image: url("Img_carta\ blanca.png");
-    background-position: center;
-    background-size: 100%;
-    width: 180px;
-    height: 251px;
-    border: none;
-    position: relative;
-    bottom: 151px;
-    left: 350px;
-    float: left;
-    background-color: transparent;
-    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color: blue;*/
+button.tap5.active{
+    visibility: hidden;
 }
 
-button.car2{
-    background-image: url("Img_carta\ blanca.png");
-    background-position: center;
-    background-size: 100%;
-    width: 180px;
-    height: 251px;
-    border: none;
-    position: relative;
-    bottom: 151px;
-    left: 370px;
-    float: left;
-    background-color: transparent;
+/*Ventana emergente 1*/
+.overlay{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
 }
 
-button.car3{
-    background-image: url("Img_carta\ blanca.png");
-    background-position: center;
-    background-size: 100%;
-    width: 180px;
-    height: 251px;
-    border: none;
-    position: relative;
-    bottom: 151px;
-    left: 390px;
-    float: left;
-    background-color: transparent;
+.overlay.active{
+    visibility: visible;
 }
 
-button.car4{
-    background-image: url("Img_carta\ blanca.png");
-    background-position: center;
-    background-size: 100%;
-    width: 180px;
-    height: 251px;
-    border: none;
-    position: relative;
-    bottom: 151px;
-    left: 410px;
-    float: left;
-    background-color: transparent;
+.popup{
+    padding: 20px;
+    opacity: 0;
 }
 
-button.car5{
-    background-image: url("Img_carta\ blanca.png");
-    background-position: center;
-    background-size: 100%;
-    width: 180px;
-    height: 251px;
-    border: none;
-    position: relative;
-    bottom: 151px;
-    left: 430px;
-    float: left;
-    background-color: transparent;
+.popup .btncerrar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
 }
 
-/*Display para cada par*/
-#img{
-    display: none;
-
+.popup .btncerrar:hover{
+    font-size: 25px;
 }
 
-#img2{
-    display: none;
+.popup.active{
+    opacity: 1;
 }
 
-#img3{
-    display: none;
+/*Ventana emergente 2*/
+.overlay2{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
 }
 
-#img4{
-    display: none;
+.overlay2.active{
+    visibility: visible;
 }
 
-#img5{
-    display: none;
+.popup2{
+    padding: 20px;
+    opacity: 0;
 }
 
+.popup2 .btncerrar2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup2 .btncerrar2:hover{
+    font-size: 25px;
+}
+
+.popup2.active{
+    opacity: 1;
+}
+
+/*Ventana emergente 3*/
+.overlay3{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay3.active{
+    visibility: visible;
+}
+
+.popup3{
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup3 .btncerrar3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup3 .btncerrar3:hover{
+    font-size: 25px;
+}
+
+.popup3.active{
+    opacity: 1;
+}
+
+/*Ventama emergente 4*/
+.overlay4{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay4.active{
+    visibility: visible;
+}
+
+.popup4{
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup4 .btncerrar4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup4 .btncerrar4:hover{
+    font-size: 25px;
+}
+
+.popup4.active{
+    opacity: 1;
+}
+
+/*Ventana emergente 5*/
+.overlay5{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay5.active{
+    visibility: visible;
+}
+
+.popup5{
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup5 .btncerrar5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup5 .btncerrar5:hover{
+    font-size: 25px;
+}
+
+.popup5.active{
+    opacity: 1;
+}
+
+/*Limpiador de elementos flotados*/
 .clearfix{
     float: none;
     clear: both;
+}
+
+.usuario{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
