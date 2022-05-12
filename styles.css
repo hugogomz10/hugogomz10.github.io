@@ -1,16 +1,36 @@
-body{
-    background-image: url("Img_fondo.png");
-    background-position: bottom;
-    background-size: 100%;
-    background-attachment: fixed;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-.pares{
-    float: left;
+body{
+    background: url("Img_fondo.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.pares {
+    width: 180px;
+    height: 251px;
+}
+
 /*Estilos para botones de tapas*/
 /*Primer boton*/
-button.tap{
+button.tap {
     background-image: url("Img_atras.png");
     background-position: center;
     background-size: 100%;
@@ -18,18 +38,15 @@ button.tap{
     height: 251px;
     border: none;
     position: relative;
-    left: 350px;
-    top: 100px;
-    float: left;
     background-color: transparent;
 }
 
-button.tap.active{
+button.tap.active {
     visibility: hidden;
 }
 
 /*Segundo boton*/
-button.tap2{
+button.tap2 {
     background-image: url("Img_atras.png");
     background-position: center;
     background-size: 100%;
@@ -37,18 +54,15 @@ button.tap2{
     height: 251px;
     border: none;
     position: relative;
-    left: 370px;
-    top: 100px;
-    float: left;
     background-color: transparent;
 }
 
-button.tap2.active{
+button.tap2.active {
     visibility: hidden;
 }
 
 /*Tercer boton*/
-button.tap3{
+button.tap3 {
     background-image: url("Img_atras.png");
     background-position: center;
     background-size: 100%;
@@ -56,18 +70,15 @@ button.tap3{
     height: 251px;
     border: none;
     position: relative;
-    left: 390px;
-    top: 100px;
-    float: left;
     background-color: transparent;
 }
 
-button.tap3.active{
+button.tap3.active {
     visibility: hidden;
 }
 
 /*Cuarto boton*/
-button.tap4{
+button.tap4 {
     background-image: url("Img_atras.png");
     background-position: center;
     background-size: 100%;
@@ -75,18 +86,15 @@ button.tap4{
     height: 251px;
     border: none;
     position: relative;
-    left: 410px;
-    top: 100px;
-    float: left;
     background-color: transparent;
 }
 
-button.tap4.active{
+button.tap4.active {
     visibility: hidden;
 }
 
 /*Quinto boton*/
-button.tap5{
+button.tap5 {
     background-image: url("Img_atras.png");
     background-position: center;
     background-size: 100%;
@@ -94,18 +102,31 @@ button.tap5{
     height: 251px;
     border: none;
     position: relative;
-    left: 430px;
-    top: 100px;
-    float: left;
     background-color: transparent;
 }
 
-button.tap5.active{
+button.tap5.active {
+    visibility: hidden;
+}
+
+/*Sexto boton*/
+button.tap6 {
+    background-image: url("Img_atras.png");
+    background-position: center;
+    background-size: 100%;
+    width: 180px;
+    height: 251px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+}
+
+button.tap6.active {
     visibility: hidden;
 }
 
 /*Ventana emergente 1*/
-.overlay{
+.overlay {
     background: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
@@ -118,16 +139,16 @@ button.tap5.active{
     visibility: hidden;
 }
 
-.overlay.active{
+.overlay.active {
     visibility: visible;
 }
 
-.popup{
+.popup {
     padding: 20px;
     opacity: 0;
 }
 
-.popup .btncerrar{
+.popup .btncerrar {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     line-height: 16px;
@@ -138,16 +159,16 @@ button.tap5.active{
     text-decoration: none;
 }
 
-.popup .btncerrar:hover{
+.popup .btncerrar:hover {
     font-size: 25px;
 }
 
-.popup.active{
+.popup.active {
     opacity: 1;
 }
 
 /*Ventana emergente 2*/
-.overlay2{
+.overlay2 {
     background: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
@@ -160,16 +181,16 @@ button.tap5.active{
     visibility: hidden;
 }
 
-.overlay2.active{
+.overlay2.active {
     visibility: visible;
 }
 
-.popup2{
+.popup2 {
     padding: 20px;
     opacity: 0;
 }
 
-.popup2 .btncerrar2{
+.popup2 .btncerrar2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     line-height: 16px;
@@ -180,16 +201,16 @@ button.tap5.active{
     text-decoration: none;
 }
 
-.popup2 .btncerrar2:hover{
+.popup2 .btncerrar2:hover {
     font-size: 25px;
 }
 
-.popup2.active{
+.popup2.active {
     opacity: 1;
 }
 
 /*Ventana emergente 3*/
-.overlay3{
+.overlay3 {
     background: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
@@ -202,16 +223,16 @@ button.tap5.active{
     visibility: hidden;
 }
 
-.overlay3.active{
+.overlay3.active {
     visibility: visible;
 }
 
-.popup3{
+.popup3 {
     padding: 20px;
     opacity: 0;
 }
 
-.popup3 .btncerrar3{
+.popup3 .btncerrar3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     line-height: 16px;
@@ -222,16 +243,16 @@ button.tap5.active{
     text-decoration: none;
 }
 
-.popup3 .btncerrar3:hover{
+.popup3 .btncerrar3:hover {
     font-size: 25px;
 }
 
-.popup3.active{
+.popup3.active {
     opacity: 1;
 }
 
 /*Ventama emergente 4*/
-.overlay4{
+.overlay4 {
     background: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
@@ -244,16 +265,16 @@ button.tap5.active{
     visibility: hidden;
 }
 
-.overlay4.active{
+.overlay4.active {
     visibility: visible;
 }
 
-.popup4{
+.popup4 {
     padding: 20px;
     opacity: 0;
 }
 
-.popup4 .btncerrar4{
+.popup4 .btncerrar4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     line-height: 16px;
@@ -264,16 +285,16 @@ button.tap5.active{
     text-decoration: none;
 }
 
-.popup4 .btncerrar4:hover{
+.popup4 .btncerrar4:hover {
     font-size: 25px;
 }
 
-.popup4.active{
+.popup4.active {
     opacity: 1;
 }
 
 /*Ventana emergente 5*/
-.overlay5{
+.overlay5 {
     background: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
@@ -286,16 +307,16 @@ button.tap5.active{
     visibility: hidden;
 }
 
-.overlay5.active{
+.overlay5.active {
     visibility: visible;
 }
 
-.popup5{
+.popup5 {
     padding: 20px;
     opacity: 0;
 }
 
-.popup5 .btncerrar5{
+.popup5 .btncerrar5 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     line-height: 16px;
@@ -306,21 +327,64 @@ button.tap5.active{
     text-decoration: none;
 }
 
-.popup5 .btncerrar5:hover{
+.popup5 .btncerrar5:hover {
     font-size: 25px;
 }
 
-.popup5.active{
+.popup5.active {
+    opacity: 1;
+}
+
+/*Ventana emergente 6*/
+/*Ventana emergente 5*/
+.overlay6 {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay6.active {
+    visibility: visible;
+}
+
+.popup6 {
+    padding: 20px;
+    opacity: 0;
+}
+
+.popup6 .btncerrar6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: white;
+    transition: .3s ease all;
+    text-decoration: none;
+}
+
+.popup6 .btncerrar6:hover {
+    font-size: 25px;
+}
+
+.popup6.active {
     opacity: 1;
 }
 
 /*Limpiador de elementos flotados*/
-.clearfix{
+.clearfix {
     float: none;
     clear: both;
 }
 
-.usuario{
+.usuario {
     top: 0;
     bottom: 0;
     left: 0;

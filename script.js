@@ -55,7 +55,7 @@ btnCerrarPopup3.addEventListener('click', function(){
     ocultarCarta3.classList.remove('active');
 });
 
-///Tercera carta
+///Cuarta carta
 var btnAbrirPopup4 = document.getElementById('btntap4'),
     overlay4 = document.getElementById('overlay4'),
     popup4 = document.getElementById('popup4'),
@@ -74,7 +74,7 @@ btnCerrarPopup4.addEventListener('click', function(){
     ocultarCarta4.classList.remove('active');
 });
 
-///Tercera carta
+///Quinta carta
 var btnAbrirPopup5 = document.getElementById('btntap5'),
     overlay5 = document.getElementById('overlay5'),
     popup5 = document.getElementById('popup5'),
@@ -91,4 +91,23 @@ btnCerrarPopup5.addEventListener('click', function(){
     overlay5.classList.remove('active');
     popup5.classList.remove('active');
     ocultarCarta5.classList.remove('active');
+});
+
+///Sexta carta
+var btnAbrirPopup6 = document.getElementById('btntap6'),
+    overlay6 = document.getElementById('overlay6'),
+    popup6 = document.getElementById('popup6'),
+    btnCerrarPopup6 = document.getElementById('btncerrar6'),
+    ocultarCarta6 = document.getElementById('btntap6');
+
+btnAbrirPopup6.addEventListener('click', function(){
+    overlay6.classList.add('active');
+    popup6.classList.add('active');
+    ocultarCarta6.classList.add('active');
+});
+
+btnCerrarPopup6.addEventListener('click', function(){
+    overlay6.classList.remove('active');
+    popup6.classList.remove('active');
+    ocultarCarta6.classList.remove('active');
 });
