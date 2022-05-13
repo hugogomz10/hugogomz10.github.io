@@ -125,6 +125,25 @@ button.tap6.active {
     visibility: hidden;
 }
 
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #00182A;
+    width: 242px;
+    height: 314px;
+    position: fixed;
+    left: 44.3%;
+    top: 36%;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+}
+
 /*Ventana emergente 1*/
 .overlay {
     background: rgba(0, 0, 0, .6);
